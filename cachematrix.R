@@ -37,7 +37,11 @@ cacheSolve <- function(x, ...) {
     }
     data <- x$get()
     m <- solve(data, ...)
+    
+    
+    message("HERE")
     x$setInverse(m)
+    ##inverse returned.
     m
 }
 
